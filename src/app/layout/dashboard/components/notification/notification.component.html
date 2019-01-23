@@ -3,7 +3,7 @@
     cdkDropList
           [cdkDropListData]="numbers"
           (cdkDropListDropped)="drop($event)"
-          
+          [cdkDropListConnectedTo]="todo"
           #done="cdkDropList"
     >
         <a href="#" class="list-group-item clearfix d-block">
