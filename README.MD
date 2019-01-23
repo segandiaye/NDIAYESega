@@ -6,19 +6,18 @@
 # CONSIGNES : LIRE LA VIDEOS AVANT USAGE ET ENSUITE
 
 # COLONEZ LE PROJET COMME SUITE
-
-`NB` Merci de bien lire les readme de chaque application avant de commencer.
 # 
-`Après avoir cloné le projet ouvre votre terminal et faites :` 
+`Après avoir cloné le projet ouvrez votre terminal et faites :` 
 # 
 `1.	cd NDIAYESega/`
+# `Tapez ensuite : `
 # 
-`2.	npm install`
+`1.	npm install`
 # 
-`3.	npm start pour le démarrer`
+`2.	npm start pour le démarrer`
 # 
 # BRAVO TESTEZ MAINTENANT VOTRE APPLICATION SUR :
-`5.	http://localhost:4200/`
+`3.	http://localhost:4200/`
 # 
 # 
 # POUR TESTER L'API
