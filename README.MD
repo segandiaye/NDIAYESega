@@ -10,7 +10,7 @@
 # 
 # COLONEZ LE PROJET COMME SUITE
 # 
-Pour le cloné vous avez deux choix :
+Pour l'avoir en local vous avez deux choix possibles :
 # 
 `1.	Téléchargez le fichier zip et le dézipper`
 # 
