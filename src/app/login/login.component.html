@@ -1,0 +1,25 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/logo_p.jpg" width="150px" class="user-avatar" />
+            <h1>PLS suivi étudiant</h1>
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="name" [(ngModel)]="firstname" class="form-control input-underline input-lg" id="login" placeholder="{{ 'Nom d\'utilisateur' | translate }}">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="passwd" [(ngModel)]="password" class="form-control input-underline input-lg" id="passwd" placeholder="{{ 'Mot de passe' | translate }}">
+                    </div>
+                </div>
+                <div *ngIf="password.length<4 && password.length>=1">
+                    <p>Mot de passe trop court.</p>
+                </div>
+                <a class="btn rounded-btn" [class.disabled]="firstname==''||password==''||password.length<4 ? true : false" [routerLink]="['/dashboard']" (click)="onLoggedin()">{{ 'Se connecter' | translate }}</a>
+                &nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/signup']">{{ 'S\'inscrire' | translate }}</a>
+            </form>
+        </div>
+    </div>
+</div>

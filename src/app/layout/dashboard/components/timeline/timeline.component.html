@@ -1,0 +1,158 @@
+<div class="card-body">
+    <div cdkDropListGroup>
+        <div class="example-container">
+            <!--<h2>To do</h2>-->
+
+            <div
+            cdkDropList
+            [cdkDropListData]="numbers"
+            (cdkDropListDropped)="drop($event)"
+            [cdkDropListConnectedTo]="todo"
+            #done="cdkDropList"
+            class="example-list"
+            >
+            <div class="example-box" *ngFor="let item of numbers" cdkDrag>
+                <!--{{item}} http://placehold.it/50/55C1E7/fff-->
+                <span class="chat-img pull-left">
+                    <img src="https://galilee.univ-paris13.fr/wp-content/uploads/favicon.jpg" alt="User Avatar" class="img-circle">
+                </span>
+                <div class="chat-body clearfix">
+                    <div class="header">
+                        <strong class="primary-font">&nbsp;&nbsp; {{item.name}} - <span style="color:green">{{item.stat}}</span></strong>
+                        <!--
+                        <small class="pull-right text-muted">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o fa-fw"></i> Il y'a {{item}} mins
+                        </small>
+                        -->
+                    </div>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;
+                        <small class="pull-right text-muted">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o fa-fw"></i> En ligne il y'a {{item.id}} mins
+                        </small>
+                    </p>
+                </div>
+                <div class="icon">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i style="cursor:pointer;font-size: 25px;" id="chat" routerLink="detail/3" class="fa fa-info fa-fw"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i style="cursor:pointer;font-size: 25px;" id="chat" (click)="chat()" class="fa fa-comments fa-fw"></i>
+                    &nbsp;&nbsp;
+                    <i style="cursor:pointer;font-size: 25px;" id="chat" (click)="chat()" class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+
+<!--
+    <div class="example-container">
+        <h2>Done</h2>
+
+        <div
+        cdkDropList
+        [cdkDropListData]="numbers2"
+        (cdkDropListDropped)="drop($event)"
+        [cdkDropListConnectedTo]="done"
+        #todo="cdkDropList"
+        class="example-list"
+        >
+        <div class="example-box" *ngFor="let item of numbers2" cdkDrag>{{item}}</div>
+    </div>
+</div>
+-->
+</div>
+
+
+
+<!--
+<ul class="timeline">
+<li>
+<div class="timeline-badge"><i class="fa fa-user-circle-o"></i>
+</div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Toto</h4>
+<p><small class="text-muted"><i class="fa fa-clock-o"></i> Il y'a 11 heures</small>
+</p>
+</div>
+<div class="timeline-body">
+<p>
+Poste actuel : <br>
+Entreprise : <br>
+Adresse domicile : <br>
+Adresse professionnel : <br>
+Email : <br>
+Téléphone : <br>
+</p>
+</div>
+</div>
+</li>
+<li class="timeline-inverted">
+<div class="timeline-badge success"><i class="fa fa-user-circle-o"></i>
+</div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">tata</h4>
+<p><small class="text-muted"><i class="fa fa-clock-o"></i> Il y'a 11 heures</small>
+</p>
+</div>
+<div class="timeline-body">
+<p>
+Poste actuel : <br>
+Entreprise : <br>
+Adresse domicile : <br>
+Adresse professionnel : <br>
+Email : <br>
+Téléphone : <br>
+</p>
+</div>
+</div>
+</li>
+<li>
+<div class="timeline-badge"><i class="fa fa-user-circle-o"></i>
+</div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Titi</h4>
+<p><small class="text-muted"><i class="fa fa-clock-o"></i> Il y'a 11 heures</small>
+</p>
+</div>
+<div class="timeline-body">
+<p>
+Poste actuel : <br>
+Entreprise : <br>
+Adresse domicile : <br>
+Adresse professionnel : <br>
+Email : <br>
+Téléphone : <br>
+</p>
+</div>
+</div>
+</li>
+<li class="timeline-inverted">
+<div class="timeline-badge success"><i class="fa fa-user-circle-o"></i>
+</div>
+<div class="timeline-panel">
+<div class="timeline-heading">
+<h4 class="timeline-title">Tutu</h4>
+<p><small class="text-muted"><i class="fa fa-clock-o"></i> Il y'a 11 heures</small>
+</p>
+</div>
+<div class="timeline-body">
+<p>
+Poste actuel : <br>
+Entreprise : <br>
+Adresse domicile : <br>
+Adresse professionnel : <br>
+Email : <br>
+Téléphone : <br>
+</p>
+</div>
+</div>
+</li>
+</ul>
+-->
+</div>

@@ -1,0 +1,120 @@
+<div class="chat-panel card card-default">
+    <div class="card-header">
+        <i class="fa fa-comments fa-fw"></i>
+        Chat
+        <div class=" pull-right" ngbDropdown>
+            <button class="btn btn-secondary btn-sm" ngbDropdownToggle>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li role="menuitem"><a class="dropdown-item" href="#">
+                    <i class="fa fa-refresh fa-fw"></i> Rafraichir</a>
+                </li>
+                <li role="menuitem"><a class="dropdown-item" href="#">
+                    <i class="fa fa-check-circle fa-fw"></i> Disponible</a>
+                </li>
+                <li role="menuitem"><a class="dropdown-item" href="#">
+                    <i class="fa fa-times fa-fw"></i> Occupé</a>
+                </li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-times fa-fw"></i> Occupé
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-clock-o fa-fw"></i> Parti
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.panel-heading -->
+    <div class="card-body">
+        <ul class="chat">
+            <li class="left clearfix">
+                <span class="chat-img pull-left">
+                    <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                </span>
+                <div class="chat-body clearfix">
+                    <div class="header">
+                        <strong class="primary-font">NDIAYE Sega</strong>
+                        <small class="pull-right text-muted">
+                            <i class="fa fa-clock-o fa-fw"></i> Il y'a 12 mins
+                        </small>
+                    </div>
+                    <p>
+                        Salut tu sais?
+                    </p>
+                </div>
+            </li>
+            <li class="right clearfix">
+                <span class="chat-img pull-right">
+                    <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                </span>
+                <div class="chat-body clearfix">
+                    <div class="header">
+                        <small class=" text-muted">
+                            <i class="fa fa-clock-o fa-fw"></i> Il y'a 13 mins
+                        </small>
+                        <strong class="pull-right primary-font">BARRY Boubacar</strong>
+                    </div>
+                    <p>
+                        Salut je sais.
+                    </p>
+                </div>
+            </li>
+            <li class="left clearfix">
+                <span class="chat-img pull-left">
+                    <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                </span>
+                <div class="chat-body clearfix">
+                    <div class="header">
+                        <small class="pull-right text-muted">
+                            <i class="fa fa-clock-o fa-fw"></i> Il y'a 14 mins
+                        </small>
+                        <strong class="primary-font">NDIAYE Sega</strong>
+                    </div>
+                    <p>
+                        Désolé alors.
+                    </p>
+                </div>
+            </li>
+            <li class="right clearfix">
+                <span class="chat-img pull-right">
+                    <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                </span>
+                <div class="chat-body clearfix">
+                    <div class="header">
+                        <small class="pull-right text-muted">
+                            <i class="fa fa-clock-o fa-fw"></i> Il y'a 15 mins
+                        </small>
+                        <strong class="pull-right primary-font">BARRY Boubacar</strong>
+                    </div>
+                    <p>
+                        Pas de quoi.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+        <div class="input-group">
+            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Tappez votre message ici...">
+            <span class="input-group-btn">
+                <button class="btn btn-warning btn-sm" id="btn-chat">
+                    Envoyer
+                </button>
+            </span>
+        </div>
+    </div>
+    <!-- /.card-footer -->
+</div>

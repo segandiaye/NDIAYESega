@@ -1,0 +1,52 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img class="user-avatar" src="assets/images/logo_p.jpg" width="150px" />
+            <h1>PLS suivi étudiant</h1>
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" name="reg_pr_nom" [(ngModel)]="prenom" class="form-control input-underline input-lg" id="reg_pr_nom" placeholder="{{ 'Prénom et Nom' | translate }}">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="reg_email" [(ngModel)]="email" class="form-control input-underline input-lg" id="reg_email" placeholder="{{ '@Email' | translate }}">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="reg_pwd" [(ngModel)]="password" class="form-control input-underline input-lg" id="reg_pwd" placeholder="{{ 'Mot de Passe' | translate }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="reg_rep_pwd" [(ngModel)]="r_password" class="form-control input-underline input-lg" id="reg_rep_pwd" placeholder="{{ 'Confirmation mot de Passe' | translate }}">
+                    </div>
+
+                    <div class="form-group">
+                      <select name="stat" [(ngModel)]="statut">
+                        <option value="">Sélectinnez votre statut</option>
+                        <option value="ancien">Ancien étudiant</option>
+                        <option value="nouveau">Etudiant en cours</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" name="red_adr_act" [(ngModel)]="adr_domicile" class="form-control input-underline input-lg" id="red_adr_act" placeholder="{{ 'Adresse actuel' | translate }}">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="reg_tel" [(ngModel)]="tel" class="form-control input-underline input-lg" id="reg_tel" placeholder="{{ 'N° de téléphone' | translate }}">
+                    </div>
+                    <div class="form-group" *ngIf="statut=='ancien'||statut==''">
+                      <input type="text" name="reg_adr_pro" [(ngModel)]="ad_pro" class="form-control input-underline input-lg" id="reg_adr_pro" placeholder="{{ 'Adresse professionnel' | translate }}">
+                    </div>
+                    <div class="form-group" *ngIf="statut=='ancien'||statut==''">
+                      <input type="text" name="reg_poste" [(ngModel)]="poste" class="form-control input-underline input-lg" id="reg_poste" placeholder="{{ 'Poste occupé' | translate }}">
+                    </div>
+                    <div class="form-group" *ngIf="statut=='ancien'||statut==''">
+                      <input type="text" name="reg_nom_lieu" [(ngModel)]="ent_name" class="form-control input-underline input-lg" id="reg_nom_lieu" placeholder="{{ 'Nom de votre entreprise' | translate }}">
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']">{{ 'Enrégistrer' | translate }}</a>&nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/login']">{{ 'Se connecter' | translate }}</a>
+            </form>
+        </div>
+    </div>
+</div>
