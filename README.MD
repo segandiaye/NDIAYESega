@@ -24,19 +24,21 @@
 # 
 `1.	IL vous faut de préférence utiliser STS comme IDE ` 
 # 
-`2.	Créer votre base de donnée avec le plsdb et utiliser de préférence mysql`
+`2.	Il se trouve sur NDIAYESega et le nom du dossier est PLS_API` 
 # 
-`3.	Avoir aussi maven configuré` 
+`3.	Créer votre base de donnée avec le nom plsdb et utiliser de préférence mysql`
 # 
-`4.	Importer le dans STS` 
+`4.	Avoir aussi maven configuré` 
 # 
-`5.	Ouvrez le package : com.paris13.pls et éxécuter UserPlsApplication.java en tant que spring boot application` 
+`5.	Importer le dans STS` 
 # 
-`6.	Vous verrez que dans votre BD qui était vide il y aura une table users qui sera créée`
+`6.	Ouvrez le package : com.paris13.pls et éxécuter UserPlsApplication.java en tant que spring boot application` 
 # 
-`7.	Pour tester insérez des données`
+`7.	Vous verrez que dans votre BD qui était vide il y aura une table users qui sera créée`
 # 
-`5.Rendez vous sur votre navigateur et tapez http://localhost:num_port/api/users`
+`8.	Pour tester insérez des données`
+# 
+`9.	Rendez-vous sur votre navigateur et tapez http://localhost:numéro_port/api/users`
 # BRAVO VOUS ETES EXPERIENCE EN API REST SPRING BOOT
 
 
