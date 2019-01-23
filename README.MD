@@ -7,6 +7,11 @@
 
 # COLONEZ LE PROJET COMME SUITE
 # 
+Pour le cloné vous avez deux choix :
+`1.	Téléchargez le fichier zip et le dézipper`
+# 
+`2. Il vous faut dabord git installé (sinon tapez sudo apt install git sur votre terminal), ouvrez votre terminal et tapez git clone https://github.com/segandiaye/NDIAYESega.git`
+# 
 `Après avoir cloné le projet ouvrez votre terminal et faites :` 
 # 
 `1.	cd NDIAYESega/`
