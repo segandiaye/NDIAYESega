@@ -21,11 +21,11 @@ Pour le cloné vous avez deux choix :
 `1.	cd NDIAYESega/`
 # `Tapez ensuite : `
 # 
-`1.	npm install`
+`1.	npm install pour installer les dépendences`
 # 
 `2.	npm start pour le démarrer`
 # 
-# BRAVO TESTEZ MAINTENANT VOTRE APPLICATION SUR :
+# BRAVO TESTEZ MAINTENANT VOTRE APPLICATION SUR VOTRE NAVIGATEUR WEB :
 `3.	http://localhost:4200/`
 # 
 # 
