@@ -1,16 +1,19 @@
 [![js-standard-style](https://galilee.univ-paris13.fr/wp-content/uploads/logo-Institut-Galilee-UP13.jpg)](https://galilee.univ-paris13.fr/)
 # 
 # Vous êtes sur le mini-projet de NDIAYE Sega.
-
-
+# 
 # CONSIGNES : LIRE LA VIDEOS AVANT USAGE ET ENSUITE
-
+# 
+# ****** Prèrequis ********
+`Rassurez vous d'avoir git et node.js installés sur votre machine`
+# 
+# 
 # COLONEZ LE PROJET COMME SUITE
 # 
 Pour le cloné vous avez deux choix :
 `1.	Téléchargez le fichier zip et le dézipper`
 # 
-`2. Il vous faut dabord git installé (sinon tapez sudo apt install git sur votre terminal), ouvrez votre terminal et tapez git clone https://github.com/segandiaye/NDIAYESega.git`
+`2. Ouvrez votre terminal et tapez git clone https://github.com/segandiaye/NDIAYESega.git`
 # 
 `Après avoir cloné le projet ouvrez votre terminal et faites :` 
 # 
